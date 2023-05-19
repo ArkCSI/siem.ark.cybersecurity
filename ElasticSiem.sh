@@ -7,7 +7,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Instalando las dependencias
-apt-get install curl
+apt-get install curl -y
 
 # Descargando la clave de Elasticsearch
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch |  gpg --dearmor -o /etc/apt/trusted.gpg.d/elastic-archive-keyring.gpg
